@@ -1,0 +1,62 @@
+@import './index.css';
+
+.App-main {
+  max-width: 1200px;
+  margin: 18px auto;
+  padding: 0 18px 60px;
+}
+
+.section-title {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.section-action {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 18px;
+}
+
+.section-action.center { justify-content: center; }
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+/* Products grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 12px;
+}
+
+/* small helper */
+.product-count {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+  .products-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .users-list { gap: 10px; }
+  .header-inner { padding: 0 14px; }
+}
+
+@media (max-width: 480px) {
+  .products-grid { grid-template-columns: 1fr; }
+  .product-card img { height: 180px; }
+}

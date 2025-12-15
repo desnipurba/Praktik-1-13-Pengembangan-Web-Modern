@@ -1,0 +1,88 @@
+/* Minimal Styling for clarity */
+.App {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.lifecycle-demo,
+.data-fetching-demo,
+.dependencies-demo {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.users-grid {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-card.active {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.loading, .error-message, .explanation {
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+.loading {
+  background-color: #e2f0ff;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.explanation {
+  background-color: #fff3cd;
+}
+
+.logs-container {
+  margin-top: 20px;
+  border: 1px solid #222;
+  background-color: #333;
+  color: #0f0;
+  padding: 10px;
+}
+
+.logs {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.log-entry {
+  font-family: monospace;
+  white-space: pre-wrap;
+  border-bottom: 1px solid #444;
+  padding: 2px 0;
+}
